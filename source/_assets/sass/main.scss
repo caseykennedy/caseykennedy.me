@@ -1,0 +1,227 @@
+/* ==========================================================================
+
+   Site developed with love by Casey Kennedy
+
+   http://caseykennedy.me
+   v3.0.0
+
+   ========================================================================== */
+
+/* ==========================================================================
+   INUITCSS
+   ========================================================================== */
+
+/**
+ * inuitcss, by @csswizardry
+ *
+ * github.com/inuitcss | inuitcss.com
+ */
+
+/**
+ * This is an example inuitcss manifest file. DO NOT MODIFY THIS FILE DIRECTLY.
+ * Instead, copy and paste it into your own CSS directory and make additions,
+ * extensions, and modifications there.
+ */
+
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Config...............Project-level configuration and feature switches.
+ * Core.................inuitcss’ core and setup settings.
+ * Global...............Project-wide variables and settings.
+ *
+ * TOOLS
+ * Rem..................Tools for converting pixel inputs into their rem
+ *                      equivalents.
+ * Font-size............A mixin which guarantees baseline-friendly line-heights.
+ * Clearfix.............Micro clearfix mixin.
+ * Hidden...............Mixin for hiding elements.
+ * Sass MQ..............inuitcss’ default media query manager.
+ *
+ * GENERIC
+ * Box-sizing...........Better default `box-sizing`.
+ * Normalize.css........A level playing field using @necolas’ Normalize.css.
+ * Reset................A tiny reset to complement Normalize.css.
+ * Shared...............Sensibly and tersely share some global commonalities
+ *                      (particularly useful when managing vertical rhythm).
+ *
+ * ELEMENTS
+ * Page.................Set up our document’s default `font-size` and
+ *                      `line-height`.
+ * Headings.............Very minimal (i.e. only font-size information) for
+ *                      headings 1 through 6.
+ * Images...............Base image styles.
+ * Tables...............Simple table styles.
+ *
+ * OBJECTS
+ * Wrapper..............Page constraint object.
+ * Layout...............Generic layout module.
+ * Media................Image- and text-like content side by side. The
+ *                      poster-child of OOCSS.
+ * Flag.................Table-layout-based advancement on the Media object.
+ * List-bare............Lists with no bullets or indents.
+ * List-inline..........A list whose items all site in a line.
+ * Box..................Simple boxing abstraction.
+ * Block................Image-on-top-of-text object.
+ * Ratio................A container for maintaining aspect ratio of content.
+ * Crop.................Provide a cropping context for media (images, etc.).
+ * Tables...............Classes for manipulating `table`s.
+ * Pack.................Pack items into available horizontal space.
+ *
+ * COMPONENTS
+ * Buttons..............An example button component, and how it fits into the
+ *                      inuitcss framework.
+ *
+ * UTILITIES
+ * Clearfix.............Bind our clearfix onto a utility class.
+ * Widths...............Simple width helper classes.
+ * Headings.............Reassigning our heading styles to helper classes.
+ * Spacing..............Nudge bits of the DOM around with these spacing
+ *                      classes.
+ * Print................Reset-like styles taken from the HTML5 Boilerplate.
+ * Hide.................Helper classes to hide content
+ */
+
+// SETTINGS
+@import "settings/settings.config";
+@import "settings/settings.global";
+@import "settings/settings.colors";
+
+$inuit-global-font-size:   16px;
+$inuit-global-line-height: 40px;
+@import "node_modules/inuitcss/settings/settings.core";
+
+
+
+
+
+// TOOLS
+@import "node_modules/inuitcss/tools/tools.rem";
+@import "node_modules/inuitcss/tools/tools.font-size";
+@import "node_modules/inuitcss/tools/tools.clearfix";
+@import "node_modules/inuitcss/tools/tools.hidden";
+
+$mq-breakpoints: (
+    mobile:  320px,
+    tablet:  740px,
+    desktop: 980px,
+    wide:    1300px
+);
+$mq-base-font-size: 18px;
+@import "node_modules/sass-mq/mq";
+
+@import "tools/tools.typography";
+@import "tools/tools.mixins";
+
+
+
+
+
+// GENERIC
+@import "node_modules/inuitcss/generic/generic.box-sizing";
+@import "node_modules/inuitcss/generic/generic.normalize";
+@import "node_modules/inuitcss/generic/generic.reset";
+@import "node_modules/inuitcss/generic/generic.shared";
+
+@import "generic/generic.fonts";
+@import "generic/generic.placeholders";
+
+
+
+
+
+// ELEMENTS
+@import "node_modules/inuitcss/elements/elements.page";
+
+$inuit-font-size-h1:  50px !default;
+$inuit-font-size-h2:  40px !default;
+$inuit-font-size-h3:  30px !default;
+$inuit-font-size-h4:  24px !default;
+$inuit-font-size-h5:  20px !default;
+$inuit-font-size-h6:  10px !default;
+@import "node_modules/inuitcss/elements/elements.headings";
+@import "node_modules/inuitcss/elements/elements.images";
+@import "node_modules/inuitcss/elements/elements.tables";
+
+@import "elements/elements.body";
+@import "elements/elements.themes";
+@import "elements/elements.typography";
+@import "elements/elements.links";
+@import "elements/elements.lists";
+
+
+
+
+
+// OBJECTS
+//
+// Uncomment and add to this section as necessary.
+$inuit-wrapper-width: 1830px;
+//$inuit-global-spacing-unit: 60px;
+@import "node_modules/inuitcss/objects/objects.wrapper";
+
+//$inuit-global-spacing-unit: 60px;
+@import "node_modules/inuitcss/objects/objects.layout";
+@import "node_modules/inuitcss/objects/objects.media";
+@import "node_modules/inuitcss/objects/objects.flag";
+@import "node_modules/inuitcss/objects/objects.list-bare";
+@import "node_modules/inuitcss/objects/objects.list-inline";
+@import "node_modules/inuitcss/objects/objects.box";
+@import "node_modules/inuitcss/objects/objects.block";
+@import "node_modules/inuitcss/objects/objects.ratio";
+@import "node_modules/inuitcss/objects/objects.crop";
+@import "node_modules/inuitcss/objects/objects.tables";
+@import "node_modules/inuitcss/objects/objects.pack";
+
+//$inuit-global-spacing-unit-huge: 110px;
+@import "objects/objects.section";
+
+
+
+
+
+// COMPONENTS
+//
+// Build and include your project’s UI Compoments here.
+@import "components/components.preloader";
+@import "components/components.header";
+@import "components/components.overlay";
+@import "components/components.hero";
+@import "components/components.footer";
+@import "components/components.picture";
+@import "components/components.portfolio";
+@import "components/components.capabilities";
+@import "components/components.panel";
+@import "components/components.icons";
+
+
+
+
+
+// TRUMPS
+@import "trumps/trumps.z-index";
+
+
+
+
+
+// UTILITIES
+@import "node_modules/inuitcss/utilities/utilities.clearfix";
+
+$inuit-fractions: 1 2 3 4 5 6 7 8 9 10 11 12;
+$inuit-offsets: true;
+@import "node_modules/inuitcss/utilities/utilities.widths";
+@import "node_modules/inuitcss/utilities/utilities.headings";
+@import "node_modules/inuitcss/utilities/utilities.spacing";
+@import "node_modules/inuitcss/utilities/utilities.print";
+@import "node_modules/inuitcss/utilities/utilities.hide";
+
+@import "utilities/utilities.fit";
+@import "utilities/utilities.color";
+@import "utilities/utilities.text";
+
+// VENDOR
+@import "node_modules/aos/src/sass/aos";
+
+@import "vendor/vendor.headroomjs";

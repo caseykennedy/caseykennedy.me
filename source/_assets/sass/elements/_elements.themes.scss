@@ -1,0 +1,72 @@
+.theme-primary { // white
+
+    background-color: $theme-background-primary;
+    color: $theme-type-primary;
+    border-color: $theme-type-primary;
+
+    &--lighter {
+
+        background-color: lighten($theme-background-primary, 15%);
+
+    }
+
+    a {
+
+      &:hover {
+
+        color: $color-seafoam-primary;
+        border-color: transparent;
+
+      }
+
+    }
+
+}
+
+.theme-secondary { // light black
+
+    background-color: $theme-background-secondary;
+
+}
+
+.theme-tertiary { // lighter black
+
+    background-color: $theme-background-tertiary;
+    color: $theme-type-tertiary;
+
+    a {
+
+      &:hover {
+
+        color: $color-seafoam-primary;
+        border-color: transparent;
+
+      }
+
+    }
+
+}
+
+.theme-quaternary { // Light Grey
+
+    background-color: $theme-background-default;
+
+}
+
+.theme-secondary, .theme-quaternary { // White & Light Grey
+
+    color: $theme-type-secondary;
+    border-color: $theme-type-default;
+
+    a {
+
+      &:hover {
+
+        color: $color-seafoam-primary;
+        border-color: transparent;
+
+      }
+
+    }
+
+}

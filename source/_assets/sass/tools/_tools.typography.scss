@@ -1,0 +1,38 @@
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff ttf) {
+
+  $src: null; //define varaible
+
+  $extmods: ( //extension modifications
+    eot: "?#iefix"
+  );
+
+  $formats: ( //type formats
+    otf: "opentype",
+    ttf: "truetype",
+    eot: "embedded-opentype"
+  );
+
+  @each $ext in $exts { // each extension in the variable $exts
+    $extmod: if(
+      map-has-key($extmods, $ext),    // check if an $ext has $extmods declared
+      $ext + map-get($extmods, $ext), // add $extmod to the $ext
+      $ext                            // or just spit out $ext
+    );
+    $format: if(
+      map-has-key($formats, $ext),    // check if an $ext has $formats declared
+      map-get($formats, $ext),        // add $format to the $ext
+      $ext                            // or just spit out $ext
+    );
+
+    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), 'comma');
+    // appends different urls and format with commas
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: url(quote($path + "." + "eot"));
+    src: $src;
+  }
+}

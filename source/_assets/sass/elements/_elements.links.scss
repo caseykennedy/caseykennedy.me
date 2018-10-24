@@ -1,0 +1,24 @@
+a {
+
+  color: inherit;
+  font-family: $font-stack-sans;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all $global-transition;
+
+  &:hover,
+  &:focus,
+  &:active {
+
+    outline: none;
+
+  }
+
+}
+
+a, button, input, select, textarea, label, summary {
+
+    touch-action: manipulation;
+
+}

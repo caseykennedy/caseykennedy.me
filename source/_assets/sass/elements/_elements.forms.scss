@@ -1,0 +1,125 @@
+/**
+ * Placeholder UI
+ */
+
+[placeholder] {
+
+    text-overflow: ellipsis;
+
+}
+
+::-webkit-input-placeholder {
+
+    transition: color $trans;
+    color: $color-placeholder;
+
+    .c-modal & {
+
+        color: $color-placeholder-light;
+
+    }
+
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+
+    color: $color-placeholder;
+
+    .c-modal & {
+
+        color: $color-placeholder-light;
+
+    }
+
+}
+
+:-moz-placeholder {
+
+    color: $color-placeholder;
+    text-overflow: ellipsis;
+
+    .c-modal & {
+
+        color: $color-placeholder-light;
+
+    }
+
+}
+
+::-moz-placeholder {
+
+    color: $color-placeholder;
+    text-overflow: ellipsis;
+
+    .c-modal & {
+
+        color: $color-placeholder-light;
+
+    }
+
+}
+
+:-ms-input-placeholder {
+
+    color: $color-placeholder;
+
+    .c-modal & {
+
+        color: $color-placeholder-light;
+
+    }
+
+}
+
+::input-placeholder {
+
+    color: $color-placeholder;
+    text-overflow: ellipsis;
+
+    .c-modal & {
+
+        color: $color-placeholder-light;
+
+    }
+
+}
+
+
+/**
+ * Minor form resets
+ */
+
+input,
+label,
+select,
+button,
+textarea {
+
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+    background: none;
+    appearance: none;
+    color: inherit;
+
+}
+
+button {
+
+    margin: 0;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    color: inherit;
+
+}
+
+textarea {
+
+    resize: vertical;
+
+}

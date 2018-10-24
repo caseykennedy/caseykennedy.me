@@ -1,0 +1,110 @@
+%remove-decoration {
+
+    text-shadow: none !important;
+    background-image: none !important;
+
+}
+
+%text-style {
+
+    @include inuit-font-size(17px);
+
+}
+
+%reset-link {
+
+    background: none !important;
+    text-shadow: none !important;
+
+}
+
+%reset-list {
+
+    list-style: none;
+
+}
+
+%font-stack-sans {
+
+    font-family: $font-stack-sans;
+
+}
+
+%text-left {
+
+    text-align: left;
+
+}
+
+%text-center {
+
+    text-align: center;
+
+}
+
+%text-right {
+
+    text-align: right;
+
+}
+
+%text-uppercase {
+
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+
+}
+
+%text-lowercase {
+
+    text-transform: lowercase;
+
+}
+
+%text-normal {
+
+    text-transform: none;
+
+}
+
+%display-block {
+
+    display: block;
+
+}
+
+%display-none {
+
+    display: none;
+
+}
+
+%display-inline-block {
+
+    display: inline-block;
+
+}
+
+%display-inline-table {
+
+    display: inline-table;
+
+}
+
+%display-inline {
+
+    display: inline;
+
+}
+
+%position-relative {
+
+    position: relative;
+
+}
+
+%position-absolute {
+
+    position: absolute;
+
+}

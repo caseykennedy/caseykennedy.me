@@ -1,0 +1,45 @@
+.o-section {
+
+  display: block;
+  padding-top: $inuit-global-spacing-unit-large;
+  padding-bottom: $inuit-global-spacing-unit-large;
+
+  @include mq($until: desktop) {
+
+    //padding-top: $inuit-global-spacing-unit-large;
+    //padding-bottom: $inuit-global-spacing-unit-large;
+
+  }
+
+  &--row {
+
+    padding-bottom: $inuit-global-spacing-unit-large;
+
+    @include mq($until: desktop) {
+
+      padding-bottom: $inuit-global-spacing-unit;
+
+    }
+
+  }
+
+  &__wrapper {
+
+    @include mq($until: tablet) {
+
+      padding-right: $inuit-global-spacing-unit-small !important;
+      padding-left: $inuit-global-spacing-unit-small !important;
+
+    }
+
+  }
+
+  &__overlay {
+
+    border-bottom: none;
+    padding-top: 0;
+    padding-bottom: $inuit-global-spacing-unit;
+
+  }
+
+}

@@ -1,0 +1,100 @@
+.c-footer {
+
+    width: 100%;
+    min-height: 100vh;
+    overflow: auto;
+    position: relative;
+    padding-bottom: 0;
+    border-bottom: none;
+    //padding-top: $inuit-global-spacing-unit-large;
+    padding-bottom: $inuit-global-spacing-unit-large;
+
+    @include mq($until: desktop) {
+
+      //min-height: inherit;
+      padding-top: $inuit-global-spacing-unit-large;
+      padding-bottom: $inuit-global-spacing-unit;
+
+    }
+
+    &__wrapper {
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-top: $inuit-global-spacing-unit;
+      margin-bottom: $inuit-global-spacing-unit;
+
+      @include mq($until: tablet) {
+
+        padding-right: $inuit-global-spacing-unit-small !important;
+        padding-left: $inuit-global-spacing-unit-small !important;
+
+      }
+
+    }
+
+    &__block {
+
+      margin-bottom: $inuit-global-spacing-unit;
+
+    }
+
+    &__me {
+
+      
+
+    }
+
+    &__social-icon {
+
+      margin-right: $inuit-global-spacing-unit-tiny;
+
+    }
+
+    &__wordmark {
+
+      margin-bottom: 0;
+
+    }
+
+    &__hire {
+
+      //@include inuit-font-size($inuit-font-size-h1);
+
+      @include mq(tablet, desktop) {
+
+
+
+      }
+
+      @include mq($until: tablet) {
+
+
+
+      }
+
+    }
+
+    &__copyright {
+
+      @include inuit-font-size(12px);
+
+      color: $color-white;
+      margin-bottom: 0;
+
+    }
+
+}
+
+.c-social__links {
+
+  @include mq($until: tablet) {
+
+    clear: left;
+    display: block;
+
+  }
+
+}

@@ -1,0 +1,50 @@
+.headroom {
+
+  will-change: transform;
+  transition: 400ms all ease;
+
+}
+
+.headroom--pinned {
+
+  transform: translateY(0%);
+  background: transparent !important;
+
+  @include opacity(1);
+
+}
+
+.headroom--unpinned {
+
+  //transform: translateY(-100%);
+
+  @include opacity(0);
+
+}
+
+.headroom--not-top {
+
+}
+
+.headroom--top {
+
+  border-bottom: none;
+
+}
+
+.headroom--bottom {
+
+  transform: translateY(0%);
+  border-bottom: none;
+
+  @include opacity(1);
+
+  @include mq($until: desktop) {
+
+    //transform: translateY(-100%);
+
+    //@include opacity(0);
+
+  }
+
+}

@@ -1,0 +1,33 @@
+///* ========================================================================
+//   #GLOBAL
+//   ======================================================================== */
+// The global settings file contains any project-wide variables; things that
+// need to be made available to the entire codebase.
+
+// Standardise some UI treatments.
+$global-radius: 2px !default;
+$global-transition: (1/3) + s !default;
+
+/**
+ * Fonts
+ */
+
+
+$font-stack-serif: "PublicoBanner Bold", "Times", serif;
+$font-stack-sans-ultralight: "SuisseIntl Ultralight", "Helvetica Neue", sans-serif;
+$font-stack-sans-light: "SuisseIntl Light", "Helvetica Neue", sans-serif;
+$font-stack-sans: "SuisseIntl Regular", "Helvetica Neue", sans-serif;
+$font-stack-sans-regular: "SuisseIntl Regular", "Helvetica Neue", sans-serif;
+$font-stack-sans-book: "SuisseIntl Book", "Helvetica Neue", sans-serif;
+$font-stack-sans-medium: "SuisseIntl Medium", "Helvetica Neue", sans-serif;
+
+$font-weight-normal: normal;
+$font-weight-bold: bold;
+
+
+/**
+ * Path variables.
+ */
+
+$path-images: "../images/";
+$path-fonts: "../fonts/";

@@ -1,0 +1,89 @@
+/**
+ * Brand colours.
+ */
+
+$color-black:              #000000;
+$color-black-light:        #0a0a0a;
+$color-black-lighter:      lighten($color-black-light, 4%);
+$color-white:              #ffffff;
+$color-off-white:          #fafafa;
+$color-grey:               #505050;
+$color-grey-light:         #aeaeae;
+$color-grey-primary:       #f9f9f9;
+$color-grey-secondary:     #f0f0f0;
+$color-grey-tertiary:      #262626;
+$color-grey-quaternary:    lighten($color-grey-primary, 25%);
+$color-grey-quintinary:    #999999;
+$color-seafoam-primary:    #34ffe0;
+$color-seafoam-secondary:  #25ba7f;
+$color-red:                #C32F34;
+
+/**
+ * Palette.
+ */
+
+$colors: (
+
+    'black':            $color-black,
+    'white':            $color-white,
+    'grey-primary':     $color-grey-primary,
+    'grey-secondary':   $color-grey-secondary,
+    'seafoam':          $color-seafoam-primary
+
+);
+
+$color-opaque-black: rgba($color-black, 0.85);
+
+/**
+ * Global colouration of elements based on brand colours.
+ */
+
+$color-background: $color-grey-secondary;
+$color-type: $color-grey-primary;
+
+$color-links: $color-grey-primary;
+$color-links-decoration: $color-grey-primary;
+$color-links-decoration-hover: $color-grey-primary;
+
+$color-selection: $color-seafoam-primary;
+$color-selection-text: $color-black;
+
+$color-border: $color-grey-primary;
+$color-border-accordion: darken($color-grey-secondary, 10%);
+
+$color-placeholder: $color-grey-primary;
+$color-placeholder-light: $color-grey-light;
+
+$color-form-border: $color-grey-primary;
+$color-form-valid: $color-grey-primary;
+$color-form-error: $color-red;
+
+$color-social-icons: currentColor;
+
+$color-header: $color-white;
+$color-header-border: $color-grey-secondary;
+
+$color-nav-mobile: $color-grey-secondary;
+$color-nav-desktop: $color-white;
+$color-nav-active: $color-grey-primary;
+$color-nav-inactive: $color-grey-quintinary;
+
+$color-hero-background: $color-grey-primary;
+$color-hero-type: $color-white;
+
+$color-item-text: $color-grey-tertiary;
+
+/**
+ * Theme colours.
+ */
+
+$theme-type-default: $color-black-light;
+$theme-type-primary: $color-black-light;
+$theme-type-secondary: $color-white;
+$theme-type-tertiary: $color-white;
+
+
+$theme-background-default: $color-grey-primary;
+$theme-background-primary: $color-grey-primary;
+$theme-background-secondary: $color-black-light;
+$theme-background-tertiary: $color-black-lighter;

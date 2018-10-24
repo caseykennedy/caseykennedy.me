@@ -1,0 +1,61 @@
+.c-portfolio {
+
+  &__item {
+
+    &--2 {
+
+      margin-bottom: $inuit-global-spacing-unit;
+
+      @include mq($until: tablet) {
+
+        margin-bottom: 0;
+
+      }
+
+    }
+
+  }
+
+}
+
+/*.c-portfolio {
+
+  @include inuit-clearfix();
+
+  position: relative;
+  padding-top: $inuit-global-spacing-unit;
+  padding-bottom: $inuit-global-spacing-unit;
+
+  &__wrapper {
+
+    @include inuit-clearfix();
+
+  }
+
+  &__item {
+
+    width: 25%;
+    display: inline-block;
+    float: left;
+
+    & > img {
+
+      margin-bottom: 0 !important;
+
+    }
+
+    @include mq($until: tablet) {
+
+      width: 50%;
+
+    }
+
+    &--half {
+
+      width: 50%;
+
+    }
+
+  }
+
+}*/

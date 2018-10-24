@@ -1,0 +1,34 @@
+.c-picture {
+
+    @include inuit-clearfix();
+    @include size(100%);
+
+    //background-color: $color-black;
+
+    &__wrapper {
+
+      left: 0px;
+      //top: -40px;
+
+    }
+
+    &__img {
+
+        opacity: 0;
+        transition: opacity $global-transition $global-transition;
+
+        &--intro {
+
+          margin-bottom: -120px;
+
+        }
+
+        &.lazyloaded {
+
+            opacity: 1;
+
+        }
+
+    }
+
+}

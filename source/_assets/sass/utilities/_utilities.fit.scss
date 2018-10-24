@@ -1,0 +1,73 @@
+.u-fit {
+    width: 100%;
+    height: 100%
+}
+
+.u-fit-w {
+    width: 100%
+}
+
+.u-fit-h {
+    height: 100%
+}
+
+.u-viewport-fit {
+    width: 100vw;
+    height: 100vh
+}
+
+.u-viewport-fit-h {
+    height: 100vh
+}
+
+.u-object-fit-cover {
+    object-fit: cover
+}
+
+.u-absolute {
+    position: absolute
+}
+
+.u-fixed {
+    position: fixed;
+    will-change: transform
+}
+
+.u-relative {
+    position: relative
+}
+
+.u-valign-top {
+    vertical-align: top
+}
+
+.u-valign-bottom {
+    vertical-align: bottom
+}
+
+.u-valign-middle {
+    vertical-align: middle
+}
+
+.u-inline-block {
+    display: inline-block
+}
+
+.u-block {
+    display: block
+}
+
+.u-overflow-h {
+    overflow: hidden
+}
+
+.u-overflow-s {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch
+}
+
+.o-wrapper--panel {
+    position: absolute;
+    top: 0;
+    left: 0
+}

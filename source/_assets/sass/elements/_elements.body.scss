@@ -1,0 +1,39 @@
+body {
+  background: $color-black;
+  font-family: $font-stack-sans;
+  overflow: hidden;
+  text-rendering: optimizelegibility;
+
+  &.stop-body {
+
+    position: fixed !important;
+    overflow: hidden !important;
+
+  }
+
+}
+
+::selection {
+
+  background: $color-seafoam-primary;
+  color: $color-white;
+
+}
+
+::-moz-selection {
+
+  background: $color-seafoam-primary;
+  color: $color-white;
+
+}
+
+@include mq($until: tablet) {
+
+  .o-wrapper {
+
+    padding-left: $inuit-global-spacing-unit !important;
+    padding-right: $inuit-global-spacing-unit !important;
+
+  }
+
+}

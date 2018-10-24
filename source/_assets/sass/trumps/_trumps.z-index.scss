@@ -1,0 +1,18 @@
+$depth: (
+  depth-1: 8,
+  depth-2: 20,
+  depth-3: 30,
+  depth-4: 40
+);
+
+.c-panel__hireme  {
+
+    z-index: map-get($depth, depth-4);
+
+}
+
+.c-hero__intro {
+
+  z-index: map-get($depth, depth-1);
+
+}

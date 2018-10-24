@@ -1,0 +1,23 @@
+@mixin size($width, $height: $width) {
+
+  width: $width;
+  height: $height;
+
+}
+
+@mixin vertical-align {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+@mixin opacity($value) {
+
+  $ie-value: $value * 100;
+  opacity: $value;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$ie-value+")";
+  filter: alpha(opacity=$ie-value);
+
+}

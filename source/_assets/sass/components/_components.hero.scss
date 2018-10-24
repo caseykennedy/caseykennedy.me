@@ -1,0 +1,67 @@
+.c-hero {
+
+    $root: &;
+
+    width: 100%;
+    min-height: 66vh;
+    overflow: auto;
+    position: relative;
+    background-color: none;
+    //padding-top: 12em;
+    padding-top: 140px;
+    overflow: visible;
+
+    @include vertical-align();
+
+    @include mq($until: tablet) {
+
+      padding-top: 6em;
+
+    }
+
+    &__wrapper {
+
+      @include mq($until: tablet) {
+
+        padding-left: $inuit-global-spacing-unit-small !important;
+        padding-right: $inuit-global-spacing-unit-small !important;
+
+      }
+
+    }
+
+    &__intro {
+
+      top: 140px;
+      left: 0;
+      min-height: 100vh;
+      padding: $inuit-global-spacing-unit-large;
+
+      @include vertical-align();
+
+      &__message {
+
+        //@include vertical-align();
+
+      }
+
+    }
+
+    &__title {
+
+      & span {
+
+        border-bottom: 20px solid $color-seafoam-primary;
+
+      }
+
+    }
+
+    &__title--bold {
+
+      font-family: $font-stack-sans-book;
+      color: $color-white;
+
+    }
+
+}

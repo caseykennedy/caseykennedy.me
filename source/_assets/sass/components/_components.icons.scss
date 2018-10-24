@@ -1,0 +1,19 @@
+.iconic {
+
+  width: 22px;
+  height: 22px;
+
+}
+
+.c-icon {
+
+  transition: all $global-transition;
+  fill: $color-white;
+
+  &:hover {
+
+    fill: $color-seafoam-primary;
+
+  }
+
+}

@@ -1,0 +1,49 @@
+img {
+
+    max-width: 100%;
+    font-style: italic;
+    vertical-align: middle;
+    height: auto;
+
+    &[src*=".svg"] {
+
+        width: 100% \9; // 1
+
+    }
+
+    a & {
+
+        border: none;
+
+    }
+
+}
+
+_::-ms-reveal,
+
+img[src*=".svg"] {
+
+    width: 100%; // 1
+
+}
+
+audio,
+canvas,
+iframe,
+video,
+svg {
+
+    vertical-align: middle;
+
+}
+
+iframe, object {
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+
+}
